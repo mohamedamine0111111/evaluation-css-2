@@ -1,18 +1,96 @@
-/* Error: expected more input.
- *   ,
- * 1 | @forward
- *   |         ^
- *   '
- *   styles\components\_index.scss 1:9  @use
- *   styles\styles.scss 2:1             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected more input.\a   \2577 \a 1 \2502  @forward\a   \2502          ^\a   \2575 \a   styles\\components\\_index.scss 1:9  @use\a   styles\\styles.scss 2:1             root stylesheet";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background-color: white;
+  color: black;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.burger-menu > div {
+  border: 1.5px solid rgb(46, 187, 140);
+  width: 20px;
+}
+
+@media (min-width: 950px) {
+  .burger-menu {
+    display: none;
+  }
+}
+.header_bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_logo {
+  text-decoration: none;
+  color: rgb(46, 187, 140);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.nav_bar {
+  display: none;
+}
+
+.header_hero {
+  width: 100%;
+  box-shadow: linear-gradient(90deg, rgb(42, 123, 155) 0%, rgb(87, 199, 133) 50%, rgb(237, 221, 83) 100%);
+}
+
+.img-hero {
+  width: 100vh;
+  position: relative;
+}
+
+.img-hero img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 3;
+}
+
+.hero_titles {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 1;
+  color: white;
+}
+
+@media (min-width: 950px) {
+  .nav_bar {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=styles.min.css.map */

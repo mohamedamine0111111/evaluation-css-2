@@ -1,0 +1,15 @@
+.burger-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.burger-menu>div{
+    border: 1.5px solid rgb(46, 187, 140);
+    width: 20px;
+}
+@media (min-width:950px) {
+    .burger-menu{
+        display: none;
+    }
+    
+}
